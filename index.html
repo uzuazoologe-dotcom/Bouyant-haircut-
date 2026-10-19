@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -8,11 +10,11 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="theme-color" content="#101010">
+  <meta name="theme-color" content="#0759b5">
 
-  <meta name="description" content="FreshCut Barber Shop in Isoko South, Delta State, Nigeria. Quality haircuts, grooming and home-service bookings.">
+  <meta name="description" content="Bouyant Haircut in Delta State, Nigeria. Men's, ladies' and children's haircuts, shaving, black dye and home-service grooming. Contact us on WhatsApp to book.">
 
-  <title>FreshCut Barber Shop | Isoko South</title>
+  <title>Bouyant Haircut | Delta State</title>
 
   <style>
 
@@ -30,19 +32,25 @@
 
       scroll-behavior: smooth;
 
-      scroll-padding-top: 110px;
+      scroll-padding-top: 100px;
 
     }
 
     :root {
 
-      --gold: #d4af37;
+      --blue: #0866d5;
 
-      --dark: #101010;
+      --dark-blue: #06418b;
 
-      --card: #1b1b1b;
+      --pale-blue: #eaf3ff;
 
-      --muted: #c4c4c4;
+      --white: #ffffff;
+
+      --text: #192b42;
+
+      --muted: #627187;
+
+      --border: #dce7f4;
 
     }
 
@@ -50,9 +58,9 @@
 
       font-family: Arial, sans-serif;
 
-      background: var(--dark);
+      background: var(--white);
 
-      color: #fff;
+      color: var(--text);
 
       line-height: 1.6;
 
@@ -60,11 +68,11 @@
 
     header {
 
-      background: #080808;
+      background: var(--white);
 
-      border-bottom: 1px solid #292929;
+      border-bottom: 1px solid var(--border);
 
-      padding: 16px 7%;
+      padding: 15px 7%;
 
       display: flex;
 
@@ -86,13 +94,11 @@
 
     .logo {
 
-      color: var(--gold);
+      color: var(--blue);
 
-      font-size: 24px;
+      font-size: 23px;
 
       font-weight: bold;
-
-      white-space: nowrap;
 
     }
 
@@ -100,31 +106,31 @@
 
       display: flex;
 
-      gap: 16px;
-
       flex-wrap: wrap;
+
+      gap: 15px;
 
     }
 
     nav a {
 
-      color: white;
+      color: var(--text);
 
       text-decoration: none;
 
       font-size: 14px;
 
+      font-weight: 600;
+
     }
 
     nav a:hover {
 
-      color: var(--gold);
+      color: var(--blue);
 
     }
 
     .hero {
-
-      min-height: 470px;
 
       padding: 65px 7%;
 
@@ -134,9 +140,11 @@
 
       justify-content: space-between;
 
-      gap: 35px;
+      gap: 38px;
 
       flex-wrap: wrap;
+
+      background: linear-gradient(135deg, #f4f8ff, #e3efff);
 
     }
 
@@ -146,11 +154,29 @@
 
     }
 
+    .eyebrow {
+
+      color: var(--blue);
+
+      font-weight: bold;
+
+      text-transform: uppercase;
+
+      letter-spacing: 2px;
+
+      font-size: 12px;
+
+      margin-bottom: 12px;
+
+    }
+
     .hero h1 {
+
+      color: var(--dark-blue);
 
       font-size: clamp(36px, 6vw, 58px);
 
-      line-height: 1.15;
+      line-height: 1.13;
 
       margin-bottom: 18px;
 
@@ -158,7 +184,7 @@
 
     .hero h1 span {
 
-      color: var(--gold);
+      color: var(--blue);
 
     }
 
@@ -166,7 +192,7 @@
 
       color: var(--muted);
 
-      max-width: 470px;
+      max-width: 480px;
 
       margin-bottom: 25px;
 
@@ -174,17 +200,21 @@
 
     .hero img {
 
+      display: block;
+
       width: 100%;
 
-      max-width: 390px;
+      max-width: 400px;
 
       height: 320px;
 
       object-fit: cover;
 
-      border-radius: 14px;
+      border-radius: 18px;
 
-      border: 2px solid var(--gold);
+      border: 4px solid var(--white);
+
+      box-shadow: 0 12px 35px #174d8820;
 
     }
 
@@ -192,13 +222,13 @@
 
       display: inline-block;
 
-      background: var(--gold);
+      background: var(--blue);
 
-      color: #101010;
+      color: var(--white);
 
       padding: 12px 22px;
 
-      border-radius: 6px;
+      border-radius: 7px;
 
       text-decoration: none;
 
@@ -206,13 +236,13 @@
 
       transition: 0.2s;
 
-      border: none;
+      border: 1px solid var(--blue);
 
     }
 
     .btn:hover {
 
-      background: #f0d36e;
+      background: var(--dark-blue);
 
       transform: translateY(-2px);
 
@@ -220,7 +250,7 @@
 
     section {
 
-      padding: 65px 7%;
+      padding: 60px 7%;
 
     }
 
@@ -234,9 +264,9 @@
 
     .section-title h2 {
 
-      color: var(--gold);
+      color: var(--dark-blue);
 
-      font-size: 32px;
+      font-size: 30px;
 
       margin-bottom: 8px;
 
@@ -250,9 +280,9 @@
 
     .services-grid,
 
-    .why-grid,
-
     .gallery-grid,
+
+    .why-grid,
 
     .info-grid {
 
@@ -260,7 +290,7 @@
 
       grid-template-columns: repeat(3, minmax(0, 1fr));
 
-      gap: 22px;
+      gap: 20px;
 
     }
 
@@ -270,17 +300,17 @@
 
     .info-card {
 
-      background: var(--card);
+      padding: 23px;
 
-      padding: 24px;
+      border: 1px solid var(--border);
 
-      border: 1px solid #333;
+      border-radius: 13px;
 
-      border-radius: 12px;
-
-      transition: 0.2s;
+      background: var(--white);
 
       min-width: 0;
+
+      transition: 0.2s;
 
     }
 
@@ -290,9 +320,11 @@
 
     .info-card:hover {
 
-      border-color: var(--gold);
+      border-color: var(--blue);
 
       transform: translateY(-3px);
+
+      box-shadow: 0 8px 22px #174d8810;
 
     }
 
@@ -302,9 +334,9 @@
 
     .info-card h3 {
 
-      color: var(--gold);
+      color: var(--dark-blue);
 
-      margin-bottom: 10px;
+      margin-bottom: 8px;
 
     }
 
@@ -316,7 +348,7 @@
 
       color: var(--muted);
 
-      margin-bottom: 10px;
+      margin-bottom: 12px;
 
     }
 
@@ -326,17 +358,33 @@
 
       font-weight: bold;
 
-      color: #fff;
+      color: var(--blue);
 
     }
 
-    #gallery,
+    .card-icon {
 
-    #business-info,
+      font-size: 30px;
 
-    #contact {
+      margin-bottom: 10px;
 
-      background: #151515;
+    }
+
+    .section-blue {
+
+      background: var(--pale-blue);
+
+    }
+
+    .service-note {
+
+      text-align: center;
+
+      color: var(--muted);
+
+      font-size: 13px;
+
+      margin-top: 22px;
 
     }
 
@@ -344,21 +392,11 @@
 
       overflow: hidden;
 
-      border-radius: 12px;
+      border: 1px solid var(--border);
 
-      border: 1px solid #333;
+      border-radius: 13px;
 
-      background: var(--card);
-
-      transition: 0.25s;
-
-    }
-
-    .gallery-item:hover {
-
-      border-color: var(--gold);
-
-      transform: translateY(-4px);
+      background: var(--white);
 
     }
 
@@ -368,29 +406,21 @@
 
       width: 100%;
 
-      height: 240px;
+      height: 235px;
 
       object-fit: cover;
-
-      transition: transform 0.3s;
-
-    }
-
-    .gallery-item:hover img {
-
-      transform: scale(1.04);
 
     }
 
     .gallery-caption {
 
-      padding: 12px;
+      text-align: center;
 
-      color: var(--gold);
+      padding: 12px;
 
       font-weight: bold;
 
-      text-align: center;
+      color: var(--dark-blue);
 
     }
 
@@ -400,27 +430,11 @@
 
     }
 
-    .info-icon {
-
-      font-size: 28px;
-
-      margin-bottom: 8px;
-
-    }
-
     .info-card a:not(.btn) {
 
-      color: var(--gold);
-
-      text-decoration: none;
+      color: var(--blue);
 
       overflow-wrap: anywhere;
-
-    }
-
-    .info-card a:hover {
-
-      text-decoration: underline;
 
     }
 
@@ -436,11 +450,11 @@
 
       justify-content: space-between;
 
-      gap: 10px;
+      gap: 12px;
 
       padding: 7px 0;
 
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid var(--border);
 
       font-size: 14px;
 
@@ -454,7 +468,7 @@
 
     .notice {
 
-      color: #e8ce78 !important;
+      color: var(--muted);
 
       font-size: 12px;
 
@@ -462,43 +476,45 @@
 
     }
 
-    .home-service {
-
-      border-color: var(--gold);
-
-    }
-
-    .home-service .btn {
-
-      margin-top: 8px;
-
-    }
-
     #contact {
 
       text-align: center;
 
+      background: var(--dark-blue);
+
+      color: var(--white);
+
     }
 
-    #contact p {
+    #contact .section-title h2,
 
-      color: var(--muted);
+    #contact .section-title p {
 
-      margin: 10px 0 22px;
+      color: var(--white);
+
+    }
+
+    #contact .btn {
+
+      background: var(--white);
+
+      color: var(--dark-blue);
+
+      border-color: var(--white);
 
     }
 
     footer {
 
-      padding: 22px 7%;
-
       text-align: center;
+
+      padding: 23px 7%;
+
+      background: #f4f8fd;
 
       color: var(--muted);
 
-      background: #080808;
-
-      font-size: 14px;
+      font-size: 13px;
 
     }
 
@@ -512,15 +528,15 @@
 
       z-index: 20;
 
-      width: 55px;
+      width: 56px;
 
-      height: 55px;
+      height: 56px;
 
       border-radius: 50%;
 
-      background: #25d366;
+      background: #20bd5a;
 
-      color: white;
+      color: var(--white);
 
       display: flex;
 
@@ -530,17 +546,11 @@
 
       text-decoration: none;
 
-      font-size: 27px;
+      font-size: 15px;
 
       font-weight: bold;
 
-      box-shadow: 0 3px 12px #0008;
-
-    }
-
-    .whatsapp-float:hover {
-
-      transform: scale(1.08);
+      box-shadow: 0 3px 12px #0003;
 
     }
 
@@ -548,9 +558,9 @@
 
       .services-grid,
 
-      .why-grid,
-
       .gallery-grid,
+
+      .why-grid,
 
       .info-grid {
 
@@ -566,27 +576,19 @@
 
       }
 
-      nav {
-
-        gap: 12px;
-
-      }
-
     }
 
     @media (max-width: 600px) {
 
       header {
 
-        padding: 14px 5%;
-
-        gap: 10px;
+        padding: 13px 5%;
 
       }
 
       .logo {
 
-        font-size: 22px;
+        font-size: 21px;
 
       }
 
@@ -606,7 +608,7 @@
 
       .hero {
 
-        padding: 45px 5%;
+        padding: 42px 5%;
 
         gap: 25px;
 
@@ -616,21 +618,21 @@
 
         max-width: 100%;
 
-        height: 260px;
+        height: 255px;
 
       }
 
       section {
 
-        padding: 48px 5%;
+        padding: 45px 5%;
 
       }
 
       .services-grid,
 
-      .why-grid,
-
       .gallery-grid,
+
+      .why-grid,
 
       .info-grid {
 
@@ -638,15 +640,9 @@
 
       }
 
-      .gallery-item img {
-
-        height: 260px;
-
-      }
-
       .section-title h2 {
 
-        font-size: 28px;
+        font-size: 26px;
 
       }
 
@@ -676,19 +672,19 @@
 
   <header>
 
-    <div class="logo">FreshCut ✂</div>
+    <div class="logo">Bouyant Haircut ✂</div>
 
     <nav aria-label="Main navigation">
 
       <a href="#services">Services</a>
 
+      <a href="#home-service">Home Service</a>
+
       <a href="#gallery">Gallery</a>
 
-      <a href="#why-us">Why Us</a>
+      <a href="#about">Why Us</a>
 
-      <a href="#business-info">Visit Us</a>
-
-      <a href="#contact">Book Now</a>
+      <a href="#business-info">Contact</a>
 
     </nav>
 
@@ -700,33 +696,35 @@
 
       <div class="hero-content">
 
-        <h1>Look Sharp.<br><span>Feel Fresh.</span></h1>
+        <div class="eyebrow">Look good. Feel confident.</div>
+
+        <h1>Your Style.<br><span>Your Confidence.</span></h1>
 
         <p>
 
-          Welcome to FreshCut Barber Shop — clean cuts,
+          Welcome to Bouyant Haircut! Explore our haircut,
 
-          fresh styles and great confidence. Your style
+          shaving and grooming services. Book your next
 
-          deserves the best.
+          appointment or ask us about home service.
 
         </p>
 
         <a class="btn"
 
-           href="https://wa.me/2348061721986?text=Hello%20FreshCut%2C%20I%20want%20to%20book%20a%20haircut."
+           href="https://wa.me/2349037973073?text=Hello%20Bouyant%20Haircut%2C%20I%20want%20to%20book%20an%20appointment."
 
-           target="_blank"
+           target="_blank" rel="noopener noreferrer">
 
-           rel="noopener noreferrer">
-
-          Book Your Cut
+          Book on WhatsApp
 
         </a>
 
       </div>
 
-      <img src="IMG_2834.jpeg" alt="FreshCut Barber Shop">
+      <img src="IMG_2834.jpeg"
+
+           alt="Bouyant Haircut business photo">
 
     </section>
 
@@ -734,9 +732,9 @@
 
       <div class="section-title">
 
-        <h2>Our Services</h2>
+        <h2>Our Services & Prices</h2>
 
-        <p>Quality grooming at affordable prices.</p>
+        <p>Find the grooming service that suits you.</p>
 
       </div>
 
@@ -744,9 +742,11 @@
 
         <div class="service-card">
 
-          <h3>Classic Haircut</h3>
+          <div class="card-icon">✂️</div>
 
-          <p>A clean, fresh haircut made to suit your style.</p>
+          <h3>Men's Haircut</h3>
+
+          <p>A fresh, neat haircut to suit your style.</p>
 
           <div class="price">₦2,000</div>
 
@@ -754,9 +754,23 @@
 
         <div class="service-card">
 
-          <h3>Beard Trim</h3>
+          <div class="card-icon">💇‍♀️</div>
 
-          <p>A neat beard trim for a sharp, polished look.</p>
+          <h3>Ladies' Haircut</h3>
+
+          <p>Haircut styling for ladies.</p>
+
+          <div class="price">₦2,500</div>
+
+        </div>
+
+        <div class="service-card">
+
+          <div class="card-icon">🧒</div>
+
+          <h3>Children's Haircut</h3>
+
+          <p>Neat haircuts for children.</p>
 
           <div class="price">₦1,000</div>
 
@@ -764,13 +778,105 @@
 
         <div class="service-card">
 
-          <h3>Haircut + Beard</h3>
+          <div class="card-icon">🪒</div>
 
-          <p>The complete grooming package in one visit.</p>
+          <h3>Shaving</h3>
 
-          <div class="price">₦2,500</div>
+          <p>A clean, tidy shave.</p>
+
+          <div class="price">₦500</div>
 
         </div>
+
+        <div class="service-card">
+
+          <div class="card-icon">🎨</div>
+
+          <h3>Black Dye</h3>
+
+          <p>Black hair dye service.</p>
+
+          <div class="price">₦1,000</div>
+
+        </div>
+
+      </div>
+
+      <p class="service-note">
+
+        Please confirm service availability and final prices when booking.
+
+      </p>
+
+    </section>
+
+    <section id="home-service" class="section-blue">
+
+      <div class="section-title">
+
+        <h2>Home Service Prices</h2>
+
+        <p>Ask about arranging a grooming appointment at home.</p>
+
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+
+          <div class="card-icon">👨</div>
+
+          <h3>Men's Home Service</h3>
+
+          <p>Haircut at your home by arrangement.</p>
+
+          <div class="price">₦5,000</div>
+
+        </div>
+
+        <div class="service-card">
+
+          <div class="card-icon">👩</div>
+
+          <h3>Women's Home Service</h3>
+
+          <p>Haircut service at home by arrangement.</p>
+
+          <div class="price">₦6,000</div>
+
+        </div>
+
+        <div class="service-card">
+
+          <div class="card-icon">🧒</div>
+
+          <h3>Children's Home Service</h3>
+
+          <p>Children's haircut at home by arrangement.</p>
+
+          <div class="price">₦2,000</div>
+
+        </div>
+
+      </div>
+
+      <p class="service-note">
+
+        Confirm your location, availability and any extra travel charge before booking.
+
+      </p>
+
+      <div style="text-align:center; margin-top:22px;">
+
+        <a class="btn"
+
+           href="https://wa.me/2349037973073?text=Hello%20Bouyant%20Haircut%2C%20I%20want%20to%20ask%20about%20home%20service."
+
+           target="_blank" rel="noopener noreferrer">
+
+          Ask About Home Service
+
+        </a>
 
       </div>
 
@@ -782,7 +888,7 @@
 
         <h2>Our Gallery</h2>
 
-        <p>Fresh styles and barbering inspiration.</p>
+        <p>Haircut and grooming inspiration.</p>
 
       </div>
 
@@ -794,11 +900,9 @@
 
             src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
 
-            alt="Barber shop and grooming style"
+            alt="Barbershop interior" loading="lazy">
 
-            loading="lazy">
-
-          <div class="gallery-caption">Fresh Style</div>
+          <div class="gallery-caption">Our Style</div>
 
         </div>
 
@@ -808,11 +912,9 @@
 
             src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80"
 
-            alt="Barber working on a haircut"
+            alt="Barber giving a haircut" loading="lazy">
 
-            loading="lazy">
-
-          <div class="gallery-caption">Clean Haircut</div>
+          <div class="gallery-caption">Fresh Haircuts</div>
 
         </div>
 
@@ -822,25 +924,29 @@
 
             src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80"
 
-            alt="Men's grooming and barbering"
+            alt="Haircut and grooming" loading="lazy">
 
-            loading="lazy">
-
-          <div class="gallery-caption">Sharp Look</div>
+          <div class="gallery-caption">Sharp Looks</div>
 
         </div>
 
       </div>
 
+      <p class="service-note">
+
+        Gallery images are illustrative. Replace them with approved photos of the business when available.
+
+      </p>
+
     </section>
 
-    <section id="why-us">
+    <section id="about" class="section-blue">
 
       <div class="section-title">
 
-        <h2>Why Choose FreshCut?</h2>
+        <h2>Why Choose Bouyant Haircut?</h2>
 
-        <p>We help you look good and feel confident.</p>
+        <p>Our goal is to help you feel confident in your style.</p>
 
       </div>
 
@@ -848,25 +954,31 @@
 
         <div class="why-card">
 
-          <h3>Clean &amp; Neat</h3>
+          <div class="card-icon">✨</div>
 
-          <p>We care about clean cuts and a tidy finish.</p>
+          <h3>Neat Styles</h3>
+
+          <p>Choose a style that works for you.</p>
+
+        </div>
+
+        <div class="why-card">
+
+          <div class="card-icon">💙</div>
+
+          <h3>Clear Pricing</h3>
+
+          <p>View listed service prices before booking.</p>
 
         </div>
 
         <div class="why-card">
 
-          <h3>Affordable</h3>
-
-          <p>Great grooming without breaking the bank.</p>
-
-        </div>
-
-        <div class="why-card">
+          <div class="card-icon">📱</div>
 
           <h3>Easy Booking</h3>
 
-          <p>Contact us on WhatsApp to arrange your visit.</p>
+          <p>Contact us through WhatsApp to make enquiries.</p>
 
         </div>
 
@@ -878,9 +990,9 @@
 
       <div class="section-title">
 
-        <h2>Visit FreshCut</h2>
+        <h2>Visit or Contact Us</h2>
 
-        <p>Shop visits and home-service bookings available.</p>
+        <p>Get in touch to ask about appointments.</p>
 
       </div>
 
@@ -888,61 +1000,19 @@
 
         <div class="info-card">
 
-          <div class="info-icon">🕒</div>
+          <div class="card-icon">📍</div>
 
-          <h3>Opening Hours</h3>
+          <h3>Location</h3>
 
-          <ul class="hours-list">
+          <p>Delta State, Nigeria</p>
 
-            <li><span>Monday</span><span>9am – 7pm</span></li>
+          <p>Contact us to confirm the shop's exact address.</p>
 
-            <li><span>Tuesday</span><span>9am – 7pm</span></li>
+          <a href="https://www.google.com/maps/search/?api=1&query=Delta+State+Nigeria"
 
-            <li><span>Wednesday</span><span>9am – 7pm</span></li>
+             target="_blank" rel="noopener noreferrer">
 
-            <li><span>Thursday</span><span>9am – 7pm</span></li>
-
-            <li><span>Friday</span><span>9am – 7pm</span></li>
-
-            <li><span>Saturday</span><span>9am – 8pm</span></li>
-
-            <li><span>Sunday</span><span>Closed</span></li>
-
-          </ul>
-
-          <p class="notice">
-
-            Example schedule. Confirm the actual hours before treating these as final.
-
-          </p>
-
-        </div>
-
-        <div class="info-card">
-
-          <div class="info-icon">📍</div>
-
-          <h3>Our Location</h3>
-
-          <p>Isoko South, Delta State, Nigeria</p>
-
-          <p>
-
-            Contact us to confirm the exact shop address
-
-            and service availability in your area.
-
-          </p>
-
-          <a
-
-            href="https://www.google.com/maps/search/?api=1&query=Isoko+South+Delta+State+Nigeria"
-
-            target="_blank"
-
-            rel="noopener noreferrer">
-
-            View Isoko South on Google Maps
+            Explore Delta State on Maps
 
           </a>
 
@@ -950,37 +1020,27 @@
 
         <div class="info-card">
 
-          <div class="info-icon">📞</div>
+          <div class="card-icon">📱</div>
 
-          <h3>Contact FreshCut</h3>
+          <h3>WhatsApp Booking</h3>
 
-          <p>Questions or ready to book your haircut?</p>
+          <p>Call or message us to enquire about services.</p>
 
           <p>
 
-            WhatsApp:
+            <a href="https://wa.me/2349037973073"
 
-            <a
+               target="_blank" rel="noopener noreferrer">
 
-              href="https://wa.me/2348061721986"
-
-              target="_blank"
-
-              rel="noopener noreferrer">
-
-              +234 806 172 1986
+              09037973073
 
             </a>
 
           </p>
 
-          <a
+          <a href="https://wa.me/2349037973073?text=Hello%20Bouyant%20Haircut%2C%20I%20have%20an%20enquiry."
 
-            href="https://wa.me/2348061721986?text=Hello%20FreshCut%2C%20I%20want%20to%20make%20an%20enquiry."
-
-            target="_blank"
-
-            rel="noopener noreferrer">
+             target="_blank" rel="noopener noreferrer">
 
             Message Us on WhatsApp
 
@@ -988,39 +1048,21 @@
 
         </div>
 
-        <div class="info-card home-service">
+        <div class="info-card">
 
-          <div class="info-icon">🏠</div>
+          <div class="card-icon">🕒</div>
 
-          <h3>Home Service Available</h3>
+          <h3>Opening Hours</h3>
 
-          <p>
+          <p>Contact us to confirm current opening hours and availability.</p>
 
-            Enjoy a fresh haircut from the comfort of your
+          <p>Appointments can be discussed on WhatsApp.</p>
 
-            home. Contact us to arrange your appointment.
+          <a href="https://wa.me/2349037973073?text=Hello%20Bouyant%20Haircut%2C%20what%20are%20your%20opening%20hours%3F"
 
-          </p>
+             target="_blank" rel="noopener noreferrer">
 
-          <p>
-
-            Available by arrangement in service areas
-
-            within Delta State.
-
-          </p>
-
-          <a
-
-            class="btn"
-
-            href="https://wa.me/2348061721986?text=Hello%20FreshCut%2C%20I%20want%20to%20book%20a%20home%20service.%20Please%20tell%20me%20your%20availability%20and%20price."
-
-            target="_blank"
-
-            rel="noopener noreferrer">
-
-            Book Home Service
+            Ask About Opening Hours
 
           </a>
 
@@ -1034,21 +1076,17 @@
 
       <div class="section-title">
 
-        <h2>Ready for a Fresh Cut?</h2>
+        <h2>Ready for Your Next Haircut?</h2>
 
-        <p>Visit us or book a home-service appointment on WhatsApp.</p>
+        <p>Message Bouyant Haircut to ask a question or arrange an appointment.</p>
 
       </div>
 
-      <a
+      <a class="btn"
 
-        class="btn"
+         href="https://wa.me/2349037973073?text=Hello%20Bouyant%20Haircut%2C%20I%20want%20to%20book%20an%20appointment."
 
-        href="https://wa.me/2348061721986?text=Hello%20FreshCut%2C%20I%20want%20to%20book%20a%20haircut."
-
-        target="_blank"
-
-        rel="noopener noreferrer">
+         target="_blank" rel="noopener noreferrer">
 
         Book on WhatsApp
 
@@ -1060,25 +1098,21 @@
 
   <footer>
 
-    <p>© 2026 FreshCut Barber Shop. All rights reserved.</p>
+    <p>&copy; 2026 Bouyant Haircut. All rights reserved.</p>
 
-    <p>Isoko South, Delta State, Nigeria | Home Service Available</p>
+    <p>Delta State, Nigeria</p>
 
   </footer>
 
-  <a
+  <a class="whatsapp-float"
 
-    class="whatsapp-float"
+     href="https://wa.me/2349037973073?text=Hello%20Bouyant%20Haircut%2C%20I%20have%20an%20enquiry."
 
-    href="https://wa.me/2348061721986"
+     target="_blank" rel="noopener noreferrer"
 
-    target="_blank"
+     aria-label="Contact Bouyant Haircut on WhatsApp">
 
-    rel="noopener noreferrer"
-
-    aria-label="Chat with FreshCut on WhatsApp">
-
-    ☎
+    WA
 
   </a>
 
