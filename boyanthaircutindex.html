@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#101010">
+
+  <meta name="description" content="FreshCut Barber Shop in Isoko South, Delta State, Nigeria. Quality haircuts, grooming and home-service bookings.">
+
+  <title>FreshCut Barber Shop | Isoko South</title>
+
+  <style>
+
+    * {
+
+      margin: 0;
+
+      padding: 0;
+
+      box-sizing: border-box;
+
+    }
+
+    html {
+
+      scroll-behavior: smooth;
+
+      scroll-padding-top: 110px;
+
+    }
+
+    :root {
+
+      --gold: #d4af37;
+
+      --dark: #101010;
+
+      --card: #1b1b1b;
+
+      --muted: #c4c4c4;
+
+    }
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+      background: var(--dark);
+
+      color: #fff;
+
+      line-height: 1.6;
+
+    }
+
+    header {
+
+      background: #080808;
+
+      border-bottom: 1px solid #292929;
+
+      padding: 16px 7%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 16px;
+
+      flex-wrap: wrap;
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 10;
+
+    }
+
+    .logo {
+
+      color: var(--gold);
+
+      font-size: 24px;
+
+      font-weight: bold;
+
+      white-space: nowrap;
+
+    }
+
+    nav {
+
+      display: flex;
+
+      gap: 16px;
+
+      flex-wrap: wrap;
+
+    }
+
+    nav a {
+
+      color: white;
+
+      text-decoration: none;
+
+      font-size: 14px;
+
+    }
+
+    nav a:hover {
+
+      color: var(--gold);
+
+    }
+
+    .hero {
+
+      min-height: 470px;
+
+      padding: 65px 7%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 35px;
+
+      flex-wrap: wrap;
+
+    }
+
+    .hero-content {
+
+      flex: 1 1 280px;
+
+    }
+
+    .hero h1 {
+
+      font-size: clamp(36px, 6vw, 58px);
+
+      line-height: 1.15;
+
+      margin-bottom: 18px;
+
+    }
+
+    .hero h1 span {
+
+      color: var(--gold);
+
+    }
+
+    .hero p {
+
+      color: var(--muted);
+
+      max-width: 470px;
+
+      margin-bottom: 25px;
+
+    }
+
+    .hero img {
+
+      width: 100%;
+
+      max-width: 390px;
+
+      height: 320px;
+
+      object-fit: cover;
+
+      border-radius: 14px;
+
+      border: 2px solid var(--gold);
+
+    }
+
+    .btn {
+
+      display: inline-block;
+
+      background: var(--gold);
+
+      color: #101010;
+
+      padding: 12px 22px;
+
+      border-radius: 6px;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      transition: 0.2s;
+
+      border: none;
+
+    }
+
+    .btn:hover {
+
+      background: #f0d36e;
+
+      transform: translateY(-2px);
+
+    }
+
+    section {
+
+      padding: 65px 7%;
+
+    }
+
+    .section-title {
+
+      text-align: center;
+
+      margin-bottom: 32px;
+
+    }
+
+    .section-title h2 {
+
+      color: var(--gold);
+
+      font-size: 32px;
+
+      margin-bottom: 8px;
+
+    }
+
+    .section-title p {
+
+      color: var(--muted);
+
+    }
+
+    .services-grid,
+
+    .why-grid,
+
+    .gallery-grid,
+
+    .info-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+
+      gap: 22px;
+
+    }
+
+    .service-card,
+
+    .why-card,
+
+    .info-card {
+
+      background: var(--card);
+
+      padding: 24px;
+
+      border: 1px solid #333;
+
+      border-radius: 12px;
+
+      transition: 0.2s;
+
+      min-width: 0;
+
+    }
+
+    .service-card:hover,
+
+    .why-card:hover,
+
+    .info-card:hover {
+
+      border-color: var(--gold);
+
+      transform: translateY(-3px);
+
+    }
+
+    .service-card h3,
+
+    .why-card h3,
+
+    .info-card h3 {
+
+      color: var(--gold);
+
+      margin-bottom: 10px;
+
+    }
+
+    .service-card p,
+
+    .why-card p,
+
+    .info-card p {
+
+      color: var(--muted);
+
+      margin-bottom: 10px;
+
+    }
+
+    .price {
+
+      font-size: 22px;
+
+      font-weight: bold;
+
+      color: #fff;
+
+    }
+
+    #gallery,
+
+    #business-info,
+
+    #contact {
+
+      background: #151515;
+
+    }
+
+    .gallery-item {
+
+      overflow: hidden;
+
+      border-radius: 12px;
+
+      border: 1px solid #333;
+
+      background: var(--card);
+
+      transition: 0.25s;
+
+    }
+
+    .gallery-item:hover {
+
+      border-color: var(--gold);
+
+      transform: translateY(-4px);
+
+    }
+
+    .gallery-item img {
+
+      display: block;
+
+      width: 100%;
+
+      height: 240px;
+
+      object-fit: cover;
+
+      transition: transform 0.3s;
+
+    }
+
+    .gallery-item:hover img {
+
+      transform: scale(1.04);
+
+    }
+
+    .gallery-caption {
+
+      padding: 12px;
+
+      color: var(--gold);
+
+      font-weight: bold;
+
+      text-align: center;
+
+    }
+
+    .info-card {
+
+      height: 100%;
+
+    }
+
+    .info-icon {
+
+      font-size: 28px;
+
+      margin-bottom: 8px;
+
+    }
+
+    .info-card a:not(.btn) {
+
+      color: var(--gold);
+
+      text-decoration: none;
+
+      overflow-wrap: anywhere;
+
+    }
+
+    .info-card a:hover {
+
+      text-decoration: underline;
+
+    }
+
+    .hours-list {
+
+      list-style: none;
+
+    }
+
+    .hours-list li {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 10px;
+
+      padding: 7px 0;
+
+      border-bottom: 1px solid #333;
+
+      font-size: 14px;
+
+    }
+
+    .hours-list li span:last-child {
+
+      text-align: right;
+
+    }
+
+    .notice {
+
+      color: #e8ce78 !important;
+
+      font-size: 12px;
+
+      margin-top: 12px;
+
+    }
+
+    .home-service {
+
+      border-color: var(--gold);
+
+    }
+
+    .home-service .btn {
+
+      margin-top: 8px;
+
+    }
+
+    #contact {
+
+      text-align: center;
+
+    }
+
+    #contact p {
+
+      color: var(--muted);
+
+      margin: 10px 0 22px;
+
+    }
+
+    footer {
+
+      padding: 22px 7%;
+
+      text-align: center;
+
+      color: var(--muted);
+
+      background: #080808;
+
+      font-size: 14px;
+
+    }
+
+    .whatsapp-float {
+
+      position: fixed;
+
+      right: 18px;
+
+      bottom: 18px;
+
+      z-index: 20;
+
+      width: 55px;
+
+      height: 55px;
+
+      border-radius: 50%;
+
+      background: #25d366;
+
+      color: white;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      text-decoration: none;
+
+      font-size: 27px;
+
+      font-weight: bold;
+
+      box-shadow: 0 3px 12px #0008;
+
+    }
+
+    .whatsapp-float:hover {
+
+      transform: scale(1.08);
+
+    }
+
+    @media (max-width: 850px) {
+
+      .services-grid,
+
+      .why-grid,
+
+      .gallery-grid,
+
+      .info-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      }
+
+      header {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+
+      }
+
+      nav {
+
+        gap: 12px;
+
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      header {
+
+        padding: 14px 5%;
+
+        gap: 10px;
+
+      }
+
+      .logo {
+
+        font-size: 22px;
+
+      }
+
+      nav {
+
+        width: 100%;
+
+        gap: 10px 14px;
+
+      }
+
+      nav a {
+
+        font-size: 13px;
+
+      }
+
+      .hero {
+
+        padding: 45px 5%;
+
+        gap: 25px;
+
+      }
+
+      .hero img {
+
+        max-width: 100%;
+
+        height: 260px;
+
+      }
+
+      section {
+
+        padding: 48px 5%;
+
+      }
+
+      .services-grid,
+
+      .why-grid,
+
+      .gallery-grid,
+
+      .info-grid {
+
+        grid-template-columns: 1fr;
+
+      }
+
+      .gallery-item img {
+
+        height: 260px;
+
+      }
+
+      .section-title h2 {
+
+        font-size: 28px;
+
+      }
+
+      .service-card,
+
+      .why-card,
+
+      .info-card {
+
+        padding: 20px;
+
+      }
+
+      footer {
+
+        padding: 22px 5%;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">FreshCut ✂</div>
+
+    <nav aria-label="Main navigation">
+
+      <a href="#services">Services</a>
+
+      <a href="#gallery">Gallery</a>
+
+      <a href="#why-us">Why Us</a>
+
+      <a href="#business-info">Visit Us</a>
+
+      <a href="#contact">Book Now</a>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <h1>Look Sharp.<br><span>Feel Fresh.</span></h1>
+
+        <p>
+
+          Welcome to FreshCut Barber Shop — clean cuts,
+
+          fresh styles and great confidence. Your style
+
+          deserves the best.
+
+        </p>
+
+        <a class="btn"
+
+           href="https://wa.me/2348061721986?text=Hello%20FreshCut%2C%20I%20want%20to%20book%20a%20haircut."
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+          Book Your Cut
+
+        </a>
+
+      </div>
+
+      <img src="IMG_2834.jpeg" alt="FreshCut Barber Shop">
+
+    </section>
+
+    <section id="services">
+
+      <div class="section-title">
+
+        <h2>Our Services</h2>
+
+        <p>Quality grooming at affordable prices.</p>
+
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+
+          <h3>Classic Haircut</h3>
+
+          <p>A clean, fresh haircut made to suit your style.</p>
+
+          <div class="price">₦2,000</div>
+
+        </div>
+
+        <div class="service-card">
+
+          <h3>Beard Trim</h3>
+
+          <p>A neat beard trim for a sharp, polished look.</p>
+
+          <div class="price">₦1,000</div>
+
+        </div>
+
+        <div class="service-card">
+
+          <h3>Haircut + Beard</h3>
+
+          <p>The complete grooming package in one visit.</p>
+
+          <div class="price">₦2,500</div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="gallery">
+
+      <div class="section-title">
+
+        <h2>Our Gallery</h2>
+
+        <p>Fresh styles and barbering inspiration.</p>
+
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+
+          <img
+
+            src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
+
+            alt="Barber shop and grooming style"
+
+            loading="lazy">
+
+          <div class="gallery-caption">Fresh Style</div>
+
+        </div>
+
+        <div class="gallery-item">
+
+          <img
+
+            src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80"
+
+            alt="Barber working on a haircut"
+
+            loading="lazy">
+
+          <div class="gallery-caption">Clean Haircut</div>
+
+        </div>
+
+        <div class="gallery-item">
+
+          <img
+
+            src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80"
+
+            alt="Men's grooming and barbering"
+
+            loading="lazy">
+
+          <div class="gallery-caption">Sharp Look</div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="why-us">
+
+      <div class="section-title">
+
+        <h2>Why Choose FreshCut?</h2>
+
+        <p>We help you look good and feel confident.</p>
+
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card">
+
+          <h3>Clean &amp; Neat</h3>
+
+          <p>We care about clean cuts and a tidy finish.</p>
+
+        </div>
+
+        <div class="why-card">
+
+          <h3>Affordable</h3>
+
+          <p>Great grooming without breaking the bank.</p>
+
+        </div>
+
+        <div class="why-card">
+
+          <h3>Easy Booking</h3>
+
+          <p>Contact us on WhatsApp to arrange your visit.</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="business-info">
+
+      <div class="section-title">
+
+        <h2>Visit FreshCut</h2>
+
+        <p>Shop visits and home-service bookings available.</p>
+
+      </div>
+
+      <div class="info-grid">
+
+        <div class="info-card">
+
+          <div class="info-icon">🕒</div>
+
+          <h3>Opening Hours</h3>
+
+          <ul class="hours-list">
+
+            <li><span>Monday</span><span>9am – 7pm</span></li>
+
+            <li><span>Tuesday</span><span>9am – 7pm</span></li>
+
+            <li><span>Wednesday</span><span>9am – 7pm</span></li>
+
+            <li><span>Thursday</span><span>9am – 7pm</span></li>
+
+            <li><span>Friday</span><span>9am – 7pm</span></li>
+
+            <li><span>Saturday</span><span>9am – 8pm</span></li>
+
+            <li><span>Sunday</span><span>Closed</span></li>
+
+          </ul>
+
+          <p class="notice">
+
+            Example schedule. Confirm the actual hours before treating these as final.
+
+          </p>
+
+        </div>
+
+        <div class="info-card">
+
+          <div class="info-icon">📍</div>
+
+          <h3>Our Location</h3>
+
+          <p>Isoko South, Delta State, Nigeria</p>
+
+          <p>
+
+            Contact us to confirm the exact shop address
+
+            and service availability in your area.
+
+          </p>
+
+          <a
+
+            href="https://www.google.com/maps/search/?api=1&query=Isoko+South+Delta+State+Nigeria"
+
+            target="_blank"
+
+            rel="noopener noreferrer">
+
+            View Isoko South on Google Maps
+
+          </a>
+
+        </div>
+
+        <div class="info-card">
+
+          <div class="info-icon">📞</div>
+
+          <h3>Contact FreshCut</h3>
+
+          <p>Questions or ready to book your haircut?</p>
+
+          <p>
+
+            WhatsApp:
+
+            <a
+
+              href="https://wa.me/2348061721986"
+
+              target="_blank"
+
+              rel="noopener noreferrer">
+
+              +234 806 172 1986
+
+            </a>
+
+          </p>
+
+          <a
+
+            href="https://wa.me/2348061721986?text=Hello%20FreshCut%2C%20I%20want%20to%20make%20an%20enquiry."
+
+            target="_blank"
+
+            rel="noopener noreferrer">
+
+            Message Us on WhatsApp
+
+          </a>
+
+        </div>
+
+        <div class="info-card home-service">
+
+          <div class="info-icon">🏠</div>
+
+          <h3>Home Service Available</h3>
+
+          <p>
+
+            Enjoy a fresh haircut from the comfort of your
+
+            home. Contact us to arrange your appointment.
+
+          </p>
+
+          <p>
+
+            Available by arrangement in service areas
+
+            within Delta State.
+
+          </p>
+
+          <a
+
+            class="btn"
+
+            href="https://wa.me/2348061721986?text=Hello%20FreshCut%2C%20I%20want%20to%20book%20a%20home%20service.%20Please%20tell%20me%20your%20availability%20and%20price."
+
+            target="_blank"
+
+            rel="noopener noreferrer">
+
+            Book Home Service
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contact">
+
+      <div class="section-title">
+
+        <h2>Ready for a Fresh Cut?</h2>
+
+        <p>Visit us or book a home-service appointment on WhatsApp.</p>
+
+      </div>
+
+      <a
+
+        class="btn"
+
+        href="https://wa.me/2348061721986?text=Hello%20FreshCut%2C%20I%20want%20to%20book%20a%20haircut."
+
+        target="_blank"
+
+        rel="noopener noreferrer">
+
+        Book on WhatsApp
+
+      </a>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p>© 2026 FreshCut Barber Shop. All rights reserved.</p>
+
+    <p>Isoko South, Delta State, Nigeria | Home Service Available</p>
+
+  </footer>
+
+  <a
+
+    class="whatsapp-float"
+
+    href="https://wa.me/2348061721986"
+
+    target="_blank"
+
+    rel="noopener noreferrer"
+
+    aria-label="Chat with FreshCut on WhatsApp">
+
+    ☎
+
+  </a>
+
+</body>
+
+</html>
